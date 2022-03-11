@@ -26,7 +26,7 @@ public class Main{
         return resultArr;
     }
     public static void main(String[] args){
-        int[] arr = {10,12,6,50,18,14,15};
+        int[] arr = {2,1,3,5,7,13,11};
         boolean flag=true;
 
         Main mainObj = new Main();
@@ -40,7 +40,9 @@ public class Main{
                 }
             }
         }
-        else if(flag);
+        else if(flag){
             System.out.println("Prime number not found in the supplied Array");
+        }
+
     }
 }
