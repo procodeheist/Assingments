@@ -26,7 +26,8 @@ public class Main{
         return resultArr;
     }
     public static void main(String[] args){
-        int[] arr = {10,12,5,50,11,14,15};
+        int[] arr = {10,12,6,50,18,14,15};
+        boolean flag=true;
 
         Main mainObj = new Main();
         int[] res = mainObj.findAndReturnPrimeNumbers(arr);
@@ -34,11 +35,12 @@ public class Main{
         if(res.length != 0){
             for(int item:res){
                 if(item != 0){
+                    flag = false;
                     System.out.print(item+" ");
                 }
             }
         }
-        else
+        else if(flag);
             System.out.println("Prime number not found in the supplied Array");
     }
 }
