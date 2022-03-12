@@ -26,7 +26,7 @@ public class Main{
         return resultArr;
     }
     public static void main(String[] args){
-        int[] arr = {2,1,3,5,7,13,11};
+        int[] arr = {2,1,3,15,7,14,11};
         boolean flag=true;
 
         Main mainObj = new Main();
