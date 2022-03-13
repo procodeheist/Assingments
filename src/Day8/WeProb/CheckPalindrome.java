@@ -21,7 +21,7 @@ class Solution {
        return checkPal(str);
     }
 
-    private boolean checkPal(StringBuffer str) {
+     boolean checkPal(StringBuffer str) {
         int start=0;
         int end = str.length()-1;
 
