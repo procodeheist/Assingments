@@ -35,11 +35,6 @@ public class Main {
             System.out.println("Please enter valid number");
         }
 
-
-
-
-
-
         System.out.println("end of main");
     }
 }

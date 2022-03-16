@@ -1,6 +1,6 @@
 package Day9.ExceptionHandling2;
 
-public class SavingAccount {
+public class SavingAccount{
     int accountNumber;
     double balance;
 
