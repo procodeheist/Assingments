@@ -1,5 +1,7 @@
 package Day11;
 
+import java.util.Objects;
+
 public class Student implements Comparable<Student>{
     private int mark;
     private String name;
@@ -34,6 +36,11 @@ public class Student implements Comparable<Student>{
         return rollNum;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" + "mark=" + mark + ", name='" + name + '\'' + ", rollNum=" + rollNum + '}';
+    }
+
     public void setRollNum(int rollNum) {
         this.rollNum = rollNum;
     }
@@ -41,5 +48,15 @@ public class Student implements Comparable<Student>{
     @Override
     public int compareTo(Student o) {
         return 0;
+    }
+    @Override
+        public boolean equals(Object o){
+        Student s = (Student) o;
+        return mark == s.mark && rollNum == s.rollNum && Objects.equals(name, s.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(mark, name, rollNum);
     }
 }

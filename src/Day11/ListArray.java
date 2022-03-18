@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class WeDay11 {
+public class ListArray {
     public static void main(String[] args) {
         List<Student> studentList = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
