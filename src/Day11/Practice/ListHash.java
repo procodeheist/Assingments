@@ -1,6 +1,5 @@
-package Day11;
+package Day11.Practice;
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
 public class ListHash {
     public static void main(String[] args) {

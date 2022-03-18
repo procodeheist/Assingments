@@ -1,4 +1,4 @@
-package Day11;
+package Day11.Practice;
 
 import java.util.ArrayList;
 import java.util.List;
