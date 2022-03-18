@@ -42,10 +42,10 @@ public class Main {
                 break;
         }
 
-        //System.out.println(productSet);
 
 
-        System.out.println(productSet);
+
+
         for (Product item:productSet){
             System.out.println("The Poduct details are");
             System.out.println("Name: "+item.getProductName());
