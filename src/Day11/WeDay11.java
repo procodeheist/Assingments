@@ -31,9 +31,7 @@ public class WeDay11 {
         System.out.println("========================");
         for(Student std:studentList){
             System.out.println("Name:"+std.getName());
-            System.out.println("------------------------");
             System.out.println("Roll Number:"+std.getRollNum());
-            System.out.println("------------------------");
             System.out.println("Mark:"+std.getMark());
             System.out.println("========================");
         }
