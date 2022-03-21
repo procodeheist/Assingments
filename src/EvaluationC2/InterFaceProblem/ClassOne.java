@@ -1,4 +1,4 @@
-package Evaluation.InterFaceProblem;
+package EvaluationC2.InterFaceProblem;
 
 public abstract class ClassOne implements InterFaceThree{
     @Override

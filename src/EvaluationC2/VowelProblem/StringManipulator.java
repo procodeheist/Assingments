@@ -1,4 +1,4 @@
-package Evaluation.VowelProblem;
+package EvaluationC2.VowelProblem;
 import java.util.Scanner;
 public class StringManipulator {
     public String removeVowels(String input) {

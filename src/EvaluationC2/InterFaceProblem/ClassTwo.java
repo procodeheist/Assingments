@@ -1,4 +1,4 @@
-package Evaluation.InterFaceProblem;
+package EvaluationC2.InterFaceProblem;
 
 public class ClassTwo extends ClassOne {
     @Override
