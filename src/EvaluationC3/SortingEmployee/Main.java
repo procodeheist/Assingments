@@ -1,4 +1,4 @@
-package EvaluationC4.SortingEmployee;
+package EvaluationC3.SortingEmployee;
 
 import java.util.Scanner;
 import java.util.TreeSet;

@@ -1,4 +1,4 @@
-package EvaluationC4.SortingEmployee;
+package EvaluationC3.SortingEmployee;
 
 public class Employee implements Comparable<Employee>{
     private int empId;
