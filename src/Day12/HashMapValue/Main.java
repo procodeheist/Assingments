@@ -13,10 +13,10 @@ public class Main {
 
         Set<Map.Entry<String,Student>> entrySet = studentMap.entrySet();
 
-        Collection<Student> studentSet = studentMap.values();
+        List<Map.Entry<String,Student>> entryList = new ArrayList<>(entrySet);
 
 
-        for (Student std:studentSet){
+        for (Map.Entry<String,Student> std:entryList){
             System.out.println(std);
         }
     }
