@@ -1,5 +1,6 @@
 package Day12.HashMapValue;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,9 +16,10 @@ public class Main {
 
         List<Map.Entry<String,Student>> entryList = new ArrayList<>(entrySet);
 
+       List<Map.Entry<String,Student>> resList= entryList.stream().sorted(new MarkCompare()).collect(Collectors.toList());
 
-        for (Map.Entry<String,Student> std:entryList){
-            System.out.println(std);
-        }
+        resList.stream().forEach(stringStudentEntry -> {
+            System.out.println(stringStudentEntry.getKey()+"->"+stringStudentEntry.getValue());
+        });
     }
 }

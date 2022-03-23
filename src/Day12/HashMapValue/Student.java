@@ -2,7 +2,7 @@ package Day12.HashMapValue;
 
 import java.util.Objects;
 
-public class Student implements Comparable<Student> {
+public class Student {
     private int roll;
     private String name;
     private int mark;
@@ -41,31 +41,4 @@ public class Student implements Comparable<Student> {
                 '}';
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
-        return roll == student.roll && mark == student.mark && name.equals(student.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(roll, name, mark);
-    }
-
-    @Override
-    public int compareTo(Student o) {
-        return 0;
-    }
-
-//    @Override
-//    public int compareTo(Student o) {
-//        if(mark>o.mark)
-//            return 1;
-//        else if(mark<o.mark)
-//            return -1;
-//        else
-//            return 0;
-//    }
 }
