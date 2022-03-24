@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.Singly;
 
 public class LinkList {
     private Node head;
@@ -49,7 +49,7 @@ public class LinkList {
             return;
         }
         Node temp = head;
-        for(int i=0; i<index-1; i++){
+        for(int i=1; i<index; i++){
             temp = temp.next;
         }
         Node newNode = new Node(value,temp.next);
@@ -58,7 +58,13 @@ public class LinkList {
 
     }
 
+    public void insertAtIndexRecursive(int start,int index,int value){
+        if(head == null || index == 0){
+            insertFirstNode(value);
+            return;
+        }
 
+    }
 
     private class Node{
 

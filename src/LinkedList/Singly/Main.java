@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.Singly;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,8 +8,8 @@ public class Main {
         linkList.insertFirstNode(5);
         linkList.insertFirstNode(6);
         linkList.insertFirstNode(7);
-        linkList.insertLast(1);
-        linkList.insertGivenIndex(5,2);
+        //linkList.insertLast(1);
+       // linkList.insertGivenIndex(5,2);
         linkList.displayNode();
 
 
