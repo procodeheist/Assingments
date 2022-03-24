@@ -1,38 +1,31 @@
 package Day14.GettingAndSetting;
 
-class ThreadA implements Runnable{
-    @Override
-    public void run() {
-        String tname=Thread.currentThread().getName();
-        synchronized (this){
-            for(int i=0;i<2;i++){
-
-                System.out.println(tname +" is running ");
-                System.out.println("Inside sync");
-            }
-        }
-        System.out.println(tname+" not sync");
+class Main extends Thread {
+    public void run(){
+        System.out.println("Inside run method");
     }
+    public static void main(String[] args){
 
-}
-class ThreadB implements Runnable{
-    @Override
-    public void run() {
-        for(int i=0;i<20;i++){
-            String tname=Thread.currentThread().getName();
-            System.out.println(tname +" is running ");
-        }
-    }
-}
-public class Main {
-    public static void main(String[] args) {
-        ThreadA ta=new ThreadA();
-        //ThreadB tb=new ThreadB();
-        Thread t1=new Thread(ta);
-        Thread t2=new Thread(ta);
-        t1.setName("simran");
-        t2.setName("Raj");
-        t1.start();
-        t2.start();
+        Thread t1 = new Main();
+        Thread t2 = new Main();
+        Thread t3 = new Main();
+
+        System.out.println("t1 thread priority : " + t1.getPriority());
+        System.out.println("t2 thread priority : " + t2.getPriority());
+        System.out.println("t3 thread priority : " + t3.getPriority());
+
+        t1.setPriority(2);
+        t2.setPriority(5);
+        t3.setPriority(8);
+
+        System.out.println("t1 thread priority : " + t1.getPriority());
+        System.out.println("t2 thread priority : " + t2.getPriority());
+        System.out.println("t3 thread priority : " + t3.getPriority());
+
+        Thread.currentThread().setName("myMain");
+        System.out.println("Currently Executing Thread : " + Thread.currentThread().getName());
+        System.out.println("Main thread priority : "+ Thread.currentThread().getPriority());
+        Thread.currentThread().setPriority(10);
+        System.out.println("Main thread priority : "+Thread.currentThread().getPriority());
     }
 }
