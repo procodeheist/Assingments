@@ -16,7 +16,11 @@ public class Main {
 
         List<Map.Entry<String,Student>> entryList = new ArrayList<>(entrySet);
 
-       List<Map.Entry<String,Student>> resList= entryList.stream().sorted(new MarkCompare()).collect(Collectors.toList());
+       List<Map.Entry<String,Student>> resList= entryList.stream().sorted((a,b)->{
+           Student s1 = a.getValue();
+           Student s2 = b.getValue();
+           return s1.getMark() > s2.getMark() ? +1 : -1;
+       }).collect(Collectors.toList());
 
         resList.stream().forEach(stringStudentEntry -> {
             System.out.println(stringStudentEntry.getKey()+"->"+stringStudentEntry.getValue());
