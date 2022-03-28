@@ -5,7 +5,7 @@ public class SavingAccount{
     double balance;
 
     void deposit(int amount){
-        this.balance = amount;
+        this.balance = this.balance+amount;
     };
     double withdraw(double amount) throws InsufficientFundException {
         if(amount>this.balance){

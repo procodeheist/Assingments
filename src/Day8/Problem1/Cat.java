@@ -5,4 +5,14 @@ public class Cat extends Animal{
     public void makeNoise() {
         System.out.println("Meow...");
     }
+
+    @Override
+    public void eat() {
+        System.out.println("Cat is eating");
+    }
+
+    @Override
+    public void walk() {
+        System.out.println("Cat is walking");
+    }
 }
