@@ -1,6 +1,9 @@
 package EvaluationC4.SerialHasARelation;
 
-public class Employee extends Adress{
+import java.io.Serializable;
+
+public class Employee implements Serializable{ 
+	
     private String empID;
     private String empName;
     Adress adress;
